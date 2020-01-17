@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Erasmus in Covilha</title>
+	<meta name="description" content="Page about spending eramus in Covilha">
+	<meta name="keywords" content="Erasmus, Covilha, Portugal, students">
+	<meta name="author" content="Krystian Lenczewski Tomasz Zawistowski">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon"type="image/png"href="img/icon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fontello.css">
+
+	
+</head>
+
+<body>
+
+	  <header>
+	   <h1 class="logo"><img src="img/pad.png" style="float: center; margin-right:10px;"/>Erasmus in Covilha</h1>
+		
+	  </header>
+			
+		<nav id="topnav">
+		
+			<ul class="menu">
+				<li><a href="index.html">Main page</a></li>
+				<li><a href="whyCovilha.php">Why Covilha?</a></li>
+				<li><a href="#">University</a>
+				<ul>
+						<li><a href="healthscience.html">Faculty of health sciences</a></li>
+						<li><a href="arts.html">Faculty of arts and letters</a></li>
+						<li><a href="social.html">Faculty of human sciences</a></li>
+						<li><a href="facultyofengineering.html">Faculty of engineering </a></li>
+					</ul>
+				</li>
+				<li><a href="interesting_place.html">Interesting place </a></li>
+				<li><a href="#">ESN </a>
+				<ul>
+						<li><a href="esn.php">What is ESN?</a></li>
+						<li><a href="esnCovilha.html">ESN Covilha</a></li>
+					</ul>
+				
+				
+				</li>
+			</ul>
+			
+		</nav>
+	
+	
+
+	
+	<div class="container">
+	
+		<div class="west">
+		
+			<main>
+			
+				<article>
+				
+					<header>
+					
+						<h1>Faculty of Arts and Letters</h1>
+			
+					</header>
+					<p>This Faculty includes two Departments, the Communication and Arts Department and Letters Department. The Communication and Arts Department includes two R & D (Research and Development) units, the Institute of Practical Philosophy (IFP) and the Laboratory of Online Communication (LABCOM), which develop projects approved and fi nanced by FCT. These units organize scientifi c meetings at national and international level; they edit books in the collection “Estudo sem Comunicação” and “Ubianas” (Communication Sciences), and “Ta pragmata” (Philosophy); LABCOM publishes in digital format, the “Livros Labcom” and the magazine “Estudo sem Comunicação”.</p>
+					
+					
+					<canvas class="responsive"id="myCanvas" width="750" height="498" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+				<script>
+				var canvas = document.getElementById('myCanvas'),
+				context = canvas.getContext('2d');
+
+				display_photo_canvas();
+
+				function display_photo_canvas()
+					{
+					photo = new Image();
+					photo.src = 'img/art.jpg';
+					photo.onload = function(){
+					context.drawImage(photo, 1, 1);
+					}
+					}
+    
+				</script>
+
+			<p>With certifi ed scientific and teaching competence professors, the Letters Department has different areas like: History, Linguistics, Spanish Language and Culture, English Language and Culture, Brazilian and African Languages as well as Cultures; Portuguese Literature, Pedagogy and Educational Sciences, Classical Languages and Cultures. In addition to facilities used in Campus I of the University, the Department of Arts streamlines the Languages Laboratory, which provides the frequency of courses in several languages such as Mandarin, Italian, Russian, German and Portuguese.</p>
+			<p>This Faculty tries to integrate all the space in active development and deepening of a wide range of knowledge and skills in an integrative pleasant and stimulating way</p>
+					
+				
+				</article>
+				
+			</main>
+		
+		</div>
+	
+		<div class="east">
+		
+			<aside>
+			
+				<nav class="asid">
+				
+					<h2>1st cycle degrees / Bachelors</h2>
+					
+					<ul>
+						<li>Cinema</li>
+						<li>Communication Sciences</li>
+						<li>Fashion Design</li>
+						<li>Industrial Design</li>
+						<li>Multimedia Design</li>
+						<li>Philosophy</li>
+						<li>Portuguese and Spanish Studies</li>
+					</ul>
+					
+					<h2>2nd cycle degrees / Masters</h2>
+					
+					<ul>
+						<li>Branding And Fashion Design</li>
+						<li>Cinema</li>
+						<li>Documental Sciences</li>
+						<li>Electrotechnical and Computer Engineering</li>
+						<li>Information Technologies and Systems</li>
+
+					</ul>
+					
+					<h2>3rd cycle degrees / Doctorates</h2>
+					
+					<ul>
+						<li>Communication Sciences</li>
+						<li>Philosophy</li>
+						
+
+					</ul>
+					
+					
+					
+				</nav>
+				
+				
+			
+			</aside>
+		
+		</div>
+		
+		<div style="clear:both;"></div>
+		
+	 </div>
+	
+	 <footer>
+	
+		
+		
+		<div class="footeresn">
+			Tomasz Zawistowki Krystian Lenczewski | Erasmus 2019 
+		</div>
+	
+	 </footer>
+	 <script>
+	 window.onscroll = function() {sticky_menu()};
+
+	 var topnavbar = document.getElementById("topnav");
+	 var sticky = topnavbar.offsetTop;
+
+	 function sticky_menu() {
+	 if (window.pageYOffset >= sticky) {
+     topnavbar.classList.add("sticky")
+	 } else {
+     topnavbar.classList.remove("sticky");
+	 }
+	 }
+
+	 </script>
+
+
+
+</body>
+</html>

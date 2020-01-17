@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	
+	<meta charset="utf-8">
+	<title>Erasmus in Covilha</title>
+	<meta name="description" content="Page about spending eramus in Covilha">
+	<meta name="keywords" content="Erasmus, Covilha, Portugal, students">
+	<meta name="author" content="Krystian Lenczewski Tomasz Zawistowski">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon"type="image/png"href="img/icon.png">
+	<link rel="stylesheet" href="style.css">
+	
+	
+</head>
+
+<body>
+
+	<header>
+	
+		<h1 class="logo"><img src="img/pad.png" style="float: center; margin-right:10px;"/>Erasmus in Covilha</h1>
+		
+	</header>	
+			
+		<nav id="topnav">
+		
+			<ul class="menu">
+				<li><a href="index.html">Main page</a></li>
+				<li><a href="whyCovilha.php">Why Covilha?</a></li>
+				<li><a href="#">University</a>
+				<ul>
+						<li><a href="healthscience.html">Faculty of health sciences</a></li>
+						<li><a href="arts.html">Faculty of arts and letters</a></li>
+						<li><a href="social.html">Faculty of human sciences</a></li>
+						<li><a href="facultyofengineering.html">Faculty of engineering </a></li>
+					</ul>
+				</li>
+				<li><a href="interesting_place.html">Interesting place </a></li>
+				<li><a href="#">ESN </a>
+				<ul>
+						<li><a href="esn.php">What is ESN?</a></li>
+						<li><a href="esnCovilha.html">ESN Covilha</a></li>
+					</ul>
+				
+				
+				</li>
+			</ul>
+			
+		</nav>
+	
+	
+
+	
+	<div class="container">
+	
+		<div class="west">
+		
+			<main>
+			
+				<article>
+				
+					<header>
+					
+						<h1>Faculty of Social and Human Sciences</h1>
+			
+					</header>
+					
+					<p>A strong conscience for the needs of a medicine faculty brings the development from the fi elds of Health led to the creation of a governmental approval for two additional medical schools in country, one of them located in Covilhã. It remained, however, immediately established that the candidate projects would have to make major changes in the medicinal curriculum, thus enabling renew the teaching of medicine in Portugal. Under that provision, the University of Beira Interior embarked on another challenge and submitted an application for innovation project of Medicine Degree, a project which was approved by the Council of Ministers Resolution No. 140/98 of 4th December. It sought to develop innovative models of training, guided by scientifi c standards, educational and high quality care, which also links with units to provide health care that would be ensured by a different and innovative organizational model</p>
+					
+					
+					<img class="responsive" src="img/healthscience.jpg" alt="health science university">
+					
+					<p>Based on the assumptions set out, were outlined three guidelines for the teaching methodology to put in practice in the Faculty of Health Sciences: the creation of a pedagogical model to replace the system of “traditional” teaching, with the inclusion of additional courses by a system of integrated teaching, based on setting targets and using, wherever possible, to problem-based learning; emphasis on learning from students side, in detriment of the processes leading to the “storage” of information. Thus, the binomial “teaching-learning” is essential to put emphasis on learning by understanding teaching as a system to facilitate it; continued control of teaching methodology. The Faculty of Health Sciences includes an R & D unit, the Centre for Research in Health Sciences, which develops projects in mobile communications and biotechnology, approved and fi nanced by FCT.</p>
+				
+				</article>
+			
+			</main>
+		
+		</div>
+	
+		<div class="east">
+		
+			<aside>
+			<canvas id="myCanvas" width="300" height="400" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+			
+			</aside>
+		
+		</div>
+		
+		<div style="clear:both;"></div>
+		
+	</div>
+	
+	<footer>
+	
+		
+		
+		<div class="footeresn">
+			Tomasz Zawistowki Krystian Lenczewski | Erasmus 2019 
+		</div>
+	
+	</footer>
+	
+	
+	<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(20, 40, 150, 400);
+	ctx.font = "20pt sans-serif";
+	ctx.fillStyle = "#9B9BA3";
+	ctx.fillText("Integrated Masters", 5, 30);
+	ctx.fillStyle = "white";
+	ctx.font="17pt  sans-serif";
+	ctx.fillText("Medicine", 5, 60);
+	ctx.fillText("Pharmaceutical Sciences", 5, 85);
+	ctx.fillStyle = "#9B9BA3";
+	ctx.fillText("1st cycle degrees|Bachelors", 5, 120);
+	ctx.fillStyle = "white";
+	ctx.fillText("Biomedical Sciences", 5, 145);
+	ctx.fillStyle = "#9B9BA3";
+	ctx.fillText("2nd cycle degrees / Masters", 5, 180);
+	ctx.fillStyle = "white";
+	ctx.fillText("Biomedical Sciences", 5, 200);
+	ctx.fillText("Gerontology", 5, 220);
+	ctx.fillText("Optometry In Vision Sciences", 5, 240);
+	ctx.fillStyle = "#9B9BA3";
+	ctx.fillText("3rd cycle degrees / Doctorates", 5, 270);
+	ctx.fillStyle = "white";
+	ctx.fillText("Biomedicine", 5, 290);
+	ctx.fillText("Medicine", 5, 315);
+	ctx.fillText("Pharmaceutical Sciences", 5, 340);
+
+
+
+	window.onscroll = function() {sticky_menu()};
+
+	var topnavbar = document.getElementById("topnav");
+	var sticky = topnavbar.offsetTop;
+
+	function sticky_menu() {
+	if (window.pageYOffset >= sticky) {
+    topnavbar.classList.add("sticky")
+	} else {
+    topnavbar.classList.remove("sticky");
+	}
+	}
+
+	</script>
+
+</body>
+</html>
